@@ -1,0 +1,20 @@
+@import './boiler';
+@import './color';
+@import './variables';
+@import './mixin';
+@import './buttons';
+@import './header';
+
+html, button{
+    font-family: $font-family;
+}
+.container{
+  
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(120,120,0, .5), rgba(100,0,0,.2)), url(../images/bg.jpg);
+}
+.container_sub{
+  max-width: 1400px;
+  margin: 0 auto;
+}

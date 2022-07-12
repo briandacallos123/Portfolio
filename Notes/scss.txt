@@ -1,0 +1,43 @@
+Things you can do with SCSS.
+
+1. It compiles your code to match cross browser without worrying to them.
+2. Variables ($varName)
+3. Nesting
+4. Create Hover ?
+	button {
+		&:hover{
+
+		}
+
+		&::after{
+			content:"Hello world";
+		}
+	}
+5. Seperate your file
+	Note:
+		1. You have to add _ before the name of style file (_name)
+		2. You have to import the file to main.scss (@import "./location w/extension")
+
+6. Mixins - Simply allow you to create styles and use it across the projects.
+	Note:
+		1. To create type (@mixin name)
+		2. To use to you have to include it (@include mixinName());
+		3. You can use pass parameters to it.
+			Ex: @mixin flexBox($background){
+				backgroundColor:$background
+			}
+			And use it:
+				@include flexBox(green)
+				note: pass arguments without ""
+
+7. Extend - You can copy all the styles of an element by using extend to it.
+	Note:
+		1. To extend use @extend elementName.
+		2. You can override the styles by puting styles below the extend.
+
+
+Note:
+1. Try to watch advance css
+Links:
+	1. https://www.youtube.com/watch?v=2SpuBqvNjHI
+	2. https://www.youtube.com/watch?v=F_feF3-NGtQ&list=PL4GEkVtNYGlJUe7foYmnWN1UgAiMkhlIn&index=3

@@ -1,0 +1,106 @@
+Colors
+- RGBA: Allows you to create background and opacity without affecting its children.
+
+Background
+- Background position: allows you to control your background image accross it's parent.
+value:: right top, right center, left top, left center, right bottom.
+
+- Background Attachment: allows you to control if the background image will move when scroll or not.
+value:: scroll, fixed.
+
+Width
+- Max-width: It grows the width according to its value but it sink down to fill the browser width.
+- Min-width: It set a boundaries that the element has limited width do sink.
+
+Text
+- The text-align: Justify; value stretches the lines so that each line has equal width (like in newspapers and magazines).
+- The text-align-last property specifies how to align the last line of a text
+	Value: right, center, justify.
+- The text-transform property is used to specify uppercase and lowercase letters in a text
+	Value: UPPERCASE, lowercase, CapitaLize.
+- The text-indent property is used to specify the indentation of the first line of a text:
+	Value: measure by PX.
+- The letter-spacing property is used to specify the space between the characters in a text.
+	Value: measure by PX, can have negative value.
+- The line-height property is used to specify the space between lines:
+	Value: decimal to whole number, 0.1 - infinity.
+- The text-shadow property adds shadow to text.
+	Value: x y || x y blur || x y blur color || x y blur color, another set.
+
+Fonts
+- Web safe fonts are fonts that are universally installed across all browsers and devices.
+- However, there are no 100% completely web safe fonts. There is always a chance that a font is not found or is 
+not installed properly. Therefore, it is very important to always use fallback fonts.
+	Value: font-family: Tahoma, Verdana, sans-serif;
+- The font-style property is mostly used to specify italic text.
+	Value: normal, italic.
+- The font-weight property specifies the weight of a font.
+	Value: normal , bold.
+
+Selector
+- > known as "Direct Child", it has to be a direct child to apply values.
+	Value: Div > Span, span is direct child of Div.
+- known as "Sibling", 
+	Value: ~ 
+- ~ direct sibling, very next child.
+
+Pseudo Selectors.
+- :hover, assign values if the mouse pointed to the element.
+- :focus, assign values if the mouse focused to the element.
+- :required, used for input elements.
+- input:checked
+- input:disabled.
+- li:first-child
+- li:last-child
+- li:nth-child(1 to kung anong number gusto mo, pwedeng 2n(even and odd kung baga))
+- span:not(lahat ng element na walang class na ganito will be given a value, powerful)
+- element::before, after
+- data attribute.
+
+Display
+- inline: all inline elements cannot have height and width, they just
+take the minimum space they needed.
+- block: takes the whole width even if they are just little, madamot.
+- inline block: pwede mo siyang setan ng height and width.
+
+data-attribute
+- data-name: can be use as attribute to element then access it in css.
+	Value: *css [data-name]{
+		content:attr(data-name)
+	}
+
+Mouse pointer
+- pointer-events: none;
+- pointer-events: auto;
+
+CSS Units.
+- View Width, and View Height always takes up the whole width and height.
+	Value: 50vh, 50vw.
+- Percentage (%), relative to it's parent.
+- Em is good for boxes because it's relative to the font size of it's font so it will
+grow even without telling to it.
+
+CSS Variables
+- Always declare your variables in :root
+- Always begin your variable in (--)
+- To access it use var(--varName)
+
+Css Calc
+
+- Allows you to perform arithmethic calculation.
+- Can combine different units and it's the real power of it.
+- Ex: Width:calc(100% - 30px), notice that it has spaces between operator 
+and it should be included if not it will not work.
+
+Css Support
+
+- It is used if a browser doesn't support certain property.
+- Ex. @support (), or @support not ().
+
+transform
+- Rotate(deg, %) - paikutin
+- Scale(2, .5, 1) - lumaki
+- Translate(x, y)
+
+
+

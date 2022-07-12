@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/9df3c0bdcd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="http://fonts.cdnfonts.com/css/metropolische" rel="stylesheet">
+                
+</head>
+<body>
+     <div class="container">
+        <div class="container_sub">
+            <div class="landing_container">
+                <header class="landing_container_header">
+                    <h1 class="landing_container_brand">Rica</h1>
+                    <span class="burger"></span>
+                    <!-- navigation -->
+                    <nav class="landing_container_nav">
+                        <i class="fa-solid fa-xmark"></i>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Know More</a>
+                                <ul>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Resume</a></li>
+                                </ul>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </li>
+                        </ul> 
+                    </nav>
+                </header>
+                <section class="landing_container_hero">
+                    <h1 class="landing_container_hero_maintext">
+                       My first website
+                    </h1>
+                    <p class="landing_container_hero_subtext">
+                        I know i can do this.
+                    </p>
+                    <button class="landing_container_hero_btn">learn more</button>
+                 
+                   
+                </section>
+            </div>
+        </div>
+     </div>
+</body>
+<script>
+    let openz = document.querySelector('.burger');
+    let nav = document.querySelector('.landing_container_nav');
+    let close = document.querySelector('.fa-xmark')
+
+    openz.addEventListener('click',()=>{
+        nav.classList.add('show_nav')
+     
+    })
+    close.addEventListener('click',()=>{
+        nav.classList.remove('show_nav')
+    })
+</script>
+</html>
